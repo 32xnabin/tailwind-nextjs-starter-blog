@@ -1,0 +1,82 @@
+---
+title: O Nepal
+date: '2026-04-11'
+tags: ['holiday', 'nepal', 'images']
+draft: false
+layout: PostBanner
+images: ['/static/images/nepal/mountains.jpg']
+summary: The majestic Himalayas of Nepal featuring ancient temples, snow-capped peaks, prayer flags, and Kathmandu valleys. Explore the beauty of this mountain kingdom through this photo gallery.
+---
+
+The majestic Himalayas of Nepal featuring ancient temples, snow-capped peaks, prayer flags, and Kathmandu valleys. Explore the beauty of this mountain kingdom through this photo gallery and see how easy it is to replicate with some MDX magic and tailwind classes.
+
+Features images served using `next/image` component. The locally stored images are located in a folder with the following path: `/static/images/nepal/[filename].jpg`
+
+Since we are using mdx, we can create a simple responsive flexbox grid to display our images with a few tailwind css classes.
+
+---
+
+# Gallery
+
+<div className="-mx-2 flex flex-wrap overflow-hidden xl:-mx-2">
+  <div className="my-1 w-full overflow-hidden px-2 xl:my-1 xl:w-1/2 xl:px-2">
+    ![Temple](/static/images/nepal/temple.jpg)
+  </div>
+  <div className="my-1 w-full overflow-hidden px-2 xl:my-1 xl:w-1/2 xl:px-2">
+    ![Everest](/static/images/nepal/everest.jpg)
+  </div>
+  <div className="my-1 w-full overflow-hidden px-2 xl:my-1 xl:w-1/2 xl:px-2">
+    ![Prayer Flags](/static/images/nepal/prayer-flags.jpg)
+  </div>
+  <div className="my-1 w-full overflow-hidden px-2 xl:my-1 xl:w-1/2 xl:px-2">
+    ![Kathmandu](/static/images/nepal/kathmandu.jpg)
+  </div>
+</div>
+
+# Implementation
+
+```js
+<div className="-mx-2 flex flex-wrap overflow-hidden xl:-mx-2">
+  <div className="my-1 w-full overflow-hidden px-2 xl:my-1 xl:w-1/2 xl:px-2">
+    ![Temple](/static/images/nepal/temple.jpg)
+  </div>
+  <div className="my-1 w-full overflow-hidden px-2 xl:my-1 xl:w-1/2 xl:px-2">
+    ![Everest](/static/images/nepal/everest.jpg)
+  </div>
+  <div className="my-1 w-full overflow-hidden px-2 xl:my-1 xl:w-1/2 xl:px-2">
+    ![Prayer Flags](/static/images/nepal/prayer-flags.jpg)
+  </div>
+  <div className="my-1 w-full overflow-hidden px-2 xl:my-1 xl:w-1/2 xl:px-2">
+    ![Kathmandu](/static/images/nepal/kathmandu.jpg)
+  </div>
+</div>
+```
+
+With MDX v2, one can interleave markdown in jsx as shown in the example code.
+
+### Photo Credits
+
+<div>
+  Temple photo by [Nepal
+  Tourism](https://unsplash.com/s/photos/nepal?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+  on
+  [Unsplash](https://unsplash.com/s/photos/nepal?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+</div>
+<div>
+  Everest photo by [Himalayan
+  Explorer](https://unsplash.com/s/photos/nepal?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+  on
+  [Unsplash](https://unsplash.com/s/photos/nepal?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+</div>
+<div>
+  Prayer Flags photo by [Mountain
+  Dreams](https://unsplash.com/s/photos/nepal?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+  on
+  [Unsplash](https://unsplash.com/s/photos/nepal?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+</div>
+<div>
+  Kathmandu photo by [Travel
+  Nepal](https://unsplash.com/s/photos/nepal?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+  on
+  [Unsplash](https://unsplash.com/s/photos/nepal?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+</div>
